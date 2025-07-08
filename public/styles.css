@@ -45,3 +45,32 @@ h3 {
 }
 
 /* content styles */
+.content{
+  background-color: white;
+  padding:20px;
+  border-radius: 10px;
+  margin:20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+  background-color: white;
+  padding:20px;
+  border-radius: 10px;
+  maring:20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  margin:10px 0;
+}
+
+/* typography */
+p{
+  margin: 15px 0;
+  color: #333;
+}
+
+strong {
+  color:#8B4513;
+}
