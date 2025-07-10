@@ -39,47 +39,69 @@ h3 {
 }
 
 .nav a {
-  color:#8B4513;
+  color:#654321;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  padding:8px 16px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
+  margin: 0 20px;
+  font-weight: 500;
+  padding:12px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .nav a:hover{
-  background-color: #f0f0f0;
-  text-decoration: underline;
+  background:rgba(139,69,19,0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(139,69,19,0.2);
 }
 
 /* content styles */
 .content{
-  background-color: white;
-  padding:20px;
-  border-radius: 10px;
-  margin:20px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: rgba(255,255, 255,  0.95);
+  padding:25px;
+  border-radius: 12px;
+  margin:25px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  border-left:4px solid #8B4513;
 }
 
 .contact-info {
-  background-color: white;
-  padding:20px;
-  border-radius: 10px;
-  margin:20px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: rgba(255,255, 255,  0.95);
+  padding: 25px;px;
+  border-radius: 12px;
+  margin:25px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  border-left:4px solid #8B4513;
 }
 
 .contact-info p {
-  margin:10px 0;
+  margin:15px 0;
+  font-size:1.05rem;
 }
 
 /* typography */
 p{
-  margin: 15px 0;
-  color: #333;
+  margin: 18px 0;
+  color: #2c1810;
+  font-size:1.05rem;
+  line-height:1.7;
 }
 
 strong {
-  color:#8B4513;
+  color:#654321;
+  font-weight:600;
+
 }
+
+.content:hover{
+  transform: translateY(-2px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+@font-face
