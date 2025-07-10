@@ -1,16 +1,21 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 800px;
+  font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f5f5f5;
+  background: rgba(245, 240, 235, 0.9),
+              url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2061&q=80') center/cover fixed;
   line-height: 1.6;
+  min-height:100vh;
+  color:#2c1810;
 }
 
 h1 {
-  color: #8B4513;
+  color: #654321;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 600;
 
 }
 
