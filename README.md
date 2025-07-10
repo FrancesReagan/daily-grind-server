@@ -26,9 +26,9 @@ the data that is actually necessary for our application.
 
 Raw axios error objects contain implementation details that our users can't see. Alot gets bundled into these error objects
 (stack traces, server configurations, API endpoints, and some authentication info). A generic message like "unable to fetch data" gives our
-users the info they need without exposing our backend arhitecture.   Logging the complete error details on our server for debugging reasons.
+users the info they need without exposing our backend arhitecture. We should stil log the complete error details on our server for debugging reasons.
 
-Generic errors also create a consistency in our API, When frontend developers know that they will always receive the same error format 
+Generic errors also create a consistency in our API; when frontend developers know that they will always receive the same error format 
 they can write cleaner error handling code.
 
 Adding Language Support: if the external API supported language parameter, we could add this feature through query parameters:
