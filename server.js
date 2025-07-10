@@ -28,6 +28,22 @@ app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname,"public","contact.html"));
 });
 
+// route for fun fact API for the coffee shop's digital screen//
+app.get("/api/fun-fact", async (req, res) => {
+  try {
+    console.log("Fetching fun fact from external fun-fact API...");
+    // make a request to useless facts API//
+    const response = await axios.get("https://uselessfacts.jsph.pl/api/v2/facts/random")
+    console.log("Successfully fetched a fun fact:",response.data.text);
+    // extract only the text of the fun fact and send cleaned up response//
+    res.json({
+      fact:response.data.text,
+    });
+  } catch(error) {
+    console.error("Error fetching the fun fact",error.message);
+  }
+  }
+})
 
 
 
