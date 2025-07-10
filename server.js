@@ -41,16 +41,17 @@ app.get("/api/fun-fact", async (req, res) => {
     });
   } catch(error) {
     console.error("Error fetching the fun fact",error.message);
+    // send generic error message to the client//
+    res.status(500).json({
+      error:"Could not fetch the fun useless fact",
+    });
   }
-  }
-})
+  });
 
-
-
-
-
-
-
+// start the server and listen on the specified  PORT//
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-})
+  console.log(`Visit http://localhost:${PORT} to view the homepage`);
+  console.log(`Visit http://localhost:${PORT}/contact to view the contact page`);
+  console.log(`Visit http://localhost:${PORT}/api/fun-fact to get a random fun fact`)
+});
