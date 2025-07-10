@@ -104,4 +104,21 @@ strong {
   transition: all 0.3s ease;
 }
 
-@font-face
+@media (max-width: 760px) {
+  body {
+    padding: 15px;
+  }
+
+h1 {
+  font-size: 1.8rem;;
+}
+
+.nav a {
+  margin: 0 10px;
+  padding: 10px 16px;
+}
+
+.content, .contact-info {
+  padding: 20px;
+}
+}
